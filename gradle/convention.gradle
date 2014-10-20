@@ -3,6 +3,8 @@ status = project.hasProperty('preferredStatus')?project.preferredStatus:(version
 
 subprojects { project ->
     apply plugin: 'java' // Plugin as major conventions
+    apply plugin: 'idea'
+    apply plugin: 'eclipse'
 
     sourceCompatibility = javaSourceCompatibilityVersion
 
